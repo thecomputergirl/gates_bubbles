@@ -26,15 +26,15 @@
         y: this.height / 2
       };
       this.year_centers = {
-        "2008": {
+        "2015": {
           x: this.width / 3,
           y: this.height / 2
         },
-        "2009": {
+        "2016": {
           x: this.width / 2,
           y: this.height / 2
         },
-        "2010": {
+        "2017": {
           x: 2 * this.width / 3,
           y: this.height / 2
         }
@@ -45,7 +45,7 @@
       this.nodes = [];
       this.force = null;
       this.circles = null;
-      this.fill_color = d3.scale.ordinal().domain(["low", "medium", "high"]).range(["#d84b2a", "#beccae", "#7aa25c"]);
+      this.fill_color = d3.scale.ordinal().domain(["low", "medium", "high"]).range(["pink", "blue", "green"]);
       max_amount = d3.max(this.data, function(d) {
         return parseInt(d.total_amount);
       });
